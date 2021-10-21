@@ -149,6 +149,10 @@ Grid
   width: 960px;
 }
 
+.container,.grid{
+  margin:0 auto;
+  width:960px;
+}
 /*
 =================================================
 Typography
@@ -171,15 +175,23 @@ buttons
 
 .btn {
   border-radius: 5px;
+  color:#fff;
+  cursor:pointer;
   display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
   margin: 0;
+  text-transform:uppercase;
 }
 
 .btn-alt {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
 }
-
+.btn-alt:hover{
+  background:#fff;
+  color:#648880;
+}
 /*
 =================================================
 home
@@ -187,6 +199,7 @@ home
 */
 
 .hero {
+  color:#fff;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
@@ -196,17 +209,21 @@ home
 }
 .hero p {
   font-size: 24px;
+  font-weight: 100;
 }
 /*
 =================================================
 Custom styles
 =================================================
 */
+
 body {
+  background:#293f50;
   color: #888;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial,
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -259,18 +276,29 @@ p a {
   border-top: 4px solid #648880;
   float: left;
   font-size: 48px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
   line-height: 44px;
   padding: 40px 0 22px 0;
+  text-transform: uppercase;
 }
 .tagline {
   margin: 66px 0 22px 0;
   text-align: right;
 }
+
+/* 
+=================================================
+Primary footer
+=================================================
+*/
+
 .primary-nav {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  float:right;
 }
 .primary-footer {
   color: #648880;
@@ -285,7 +313,30 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+.col-1-3{
+  width:33.33%;
+}
+.col-2-3{
+  width:66.66%;
+}
 
+.col-1-3, .col-2-3{
+  display:inline-block;
+  vertical-align:top;
+}
+
+.grid, .col-1-3, .col-2-3{
+  padding-left:15px;
+  padding-right:15px;
+}
+.primary-header a,
+.primary-footer a{
+  color:#648880;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
 /*
 =================================================
 navigation
